@@ -19,7 +19,7 @@ export const ItemCard: React.FC<Props> = (props) => {
 
 	const handleClick = React.useCallback(() => {
 		const url = `/items/${item.id}`;
-		navigate(url, { replace: true });
+		navigate(url);
 	}, [navigate]);
 
 	const renderItemContent = () => (
