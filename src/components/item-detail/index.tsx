@@ -29,7 +29,7 @@ export const ItemDetail: React.FC = () => {
 					<Mui.Toolbar variant="dense">
 						<Mui.Button
 							className={classes.backLabel}
-							onClick={() => navigate("/")}
+							onClick={() => navigate("/items", { replace: true })}
 						>
 							<>
 								<FiChevronLeft size={24} /> Back to Marketplace
