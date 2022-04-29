@@ -18,7 +18,7 @@ ReactDOM.render(
 	<Mui.ThemeProvider theme={theme}>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<ItemList />} />
+                <Route path="items/" element={<ItemList />} />
                 <Route path="items/:id" element={<ItemDetail />} />
             </Routes>
         </BrowserRouter>
