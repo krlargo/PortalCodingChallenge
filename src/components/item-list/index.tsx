@@ -18,7 +18,7 @@ export const ItemList: React.FC = () => {
 			<Mui.Grid
 				container
 				direction="row"
-				justifyContent="flex-start"
+				justifyContent="center"
 				spacing={2}
 			>
 				{items.map((item) => (
