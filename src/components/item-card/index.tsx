@@ -23,26 +23,28 @@ export const ItemCard: React.FC<Props> = (props) => {
 	}, [navigate]);
 
 	const renderItemContent = () => (
-		<Mui.Fade appear in={hovered}>
-			<div className={classes.itemContent}>
-				<Mui.CardContent className={classes.cardContent}>
-					<Mui.Typography className={classes.name}>
-						{item.name}
-					</Mui.Typography>
-					<ItemVariants variants={item.variants} />
-				</Mui.CardContent>
-				<div className={classes.buttonContainer}>
-					<Mui.Button
-						className={classes.button}
-						color="primary"
-						onClick={handleClick}
-						variant="contained"
-					>
-						<Mui.Typography>Select</Mui.Typography>
-					</Mui.Button>
+		<div className={classes.opacityContainer}>
+			<Mui.Fade appear in={hovered}>
+				<div className={classes.itemContent}>
+					<Mui.CardContent className={classes.cardContent}>
+						<Mui.Typography className={classes.name}>
+							{item.name}
+						</Mui.Typography>
+						<ItemVariants variants={item.variants} />
+					</Mui.CardContent>
+					<div className={classes.buttonContainer}>
+						<Mui.Button
+							className={classes.button}
+							color="primary"
+							onClick={handleClick}
+							variant="contained"
+						>
+							<Mui.Typography>Select</Mui.Typography>
+						</Mui.Button>
+					</div>
 				</div>
-			</div>
-		</Mui.Fade>
+			</Mui.Fade>
+		</div>
 	);
 
 	return (

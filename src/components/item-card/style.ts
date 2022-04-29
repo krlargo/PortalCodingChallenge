@@ -24,14 +24,12 @@ export const useStyles = Mui.makeStyles((theme) => ({
 		flexDirection: "column",
 		width: "100%",
 	},
-	container: {},
 	footerText: {
 		fontWeight: "bold",
 		fontSize: 12,
 	},
 	itemContent: {
 		backgroundColor: "#fff",
-		opacity: "0.8 !important",
 		position: "absolute",
 		top: 0,
 		bottom: 0,
@@ -42,5 +40,8 @@ export const useStyles = Mui.makeStyles((theme) => ({
 		fontSize: 16,
 		fontWeight: "bold",
 		marginBottom: 16,
+	},
+	opacityContainer: {
+		opacity: 0.75,
 	},
 }));
