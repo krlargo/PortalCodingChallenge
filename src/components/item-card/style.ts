@@ -28,6 +28,10 @@ export const useStyles = Mui.makeStyles((theme) => ({
 		fontWeight: "bold",
 		fontSize: 12,
 	},
+	image: {
+		height: "100%",
+		width: "100%",
+	},
 	itemContent: {
 		backgroundColor: "#fff",
 		position: "absolute",

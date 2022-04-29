@@ -61,7 +61,7 @@ export const ItemCard: React.FC<Props> = (props) => {
 					onMouseEnter={() => setHovered(true)}
 					onMouseLeave={() => setHovered(false)}
 				>
-					<img src={imageUrl} />
+					<img className={classes.image} src={imageUrl} />
 					{renderItemContent()}
 				</Mui.Card>
 			</Mui.Grid>

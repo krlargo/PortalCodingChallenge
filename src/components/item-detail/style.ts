@@ -13,7 +13,7 @@ export const useStyles = Mui.makeStyles({
 		maxWidth: 1200,
 	},
 	imageContainer: {
-		alignItems: "center",
+		alignItems: "flex-start",
 		display: "flex",
 		justifyContent: "center",
 	},

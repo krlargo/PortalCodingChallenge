@@ -74,13 +74,13 @@ export const ItemDetail: React.FC = () => {
 				<Mui.Grid container className={classes.container} spacing={4}>
 					<Mui.Grid
 						item
-						sm={12}
+						xs={12}
 						lg={5}
 						className={classes.imageContainer}
 					>
 						{renderImage()}
 					</Mui.Grid>
-					<Mui.Grid container item sm={12} lg={7} spacing={2}>
+					<Mui.Grid container item xs={12} lg={7} spacing={2}>
 						<Mui.Grid item xs={12}>
 							{renderInfo()}
 						</Mui.Grid>
